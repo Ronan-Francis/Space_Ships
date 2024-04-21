@@ -67,14 +67,16 @@ public class EngineController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             StartBoost();
+            boostAnimator.SetBool("isBoosting", true);
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             StopBoost();
+            boostAnimator.SetBool("isBoosting", false);
         }
 
         // Update the Animator's isBoosting parameter to match the script's state
-        boostAnimator.SetBool("isBoosting", isBoosting);
+        
     }
 
     void StartBoost()

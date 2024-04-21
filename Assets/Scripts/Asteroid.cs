@@ -8,6 +8,7 @@ public class Asteroid : MonoBehaviour
     private Vector2 spawnLocation;
     private Vector2 driftDirection;
     private Animator animator;
+    private Collider2D collider;
     public float animationDuration = 1f;
     public GameObject orePrefab; // Reference to the ore prefab
     public int oreDropCount = 3; // Number of ores to drop
@@ -15,7 +16,9 @@ public class Asteroid : MonoBehaviour
     void Awake()
     {
         animator = GetComponent<Animator>();
+        collider = GetComponent<Collider2D>(); // Get the Collider2D component
         if (animator == null) Debug.LogError("Animator component missing!");
+        if (collider == null) Debug.LogError("Collider2D component missing!");
 
         spawnLocation = transform.position; // Store the spawn location
         driftDirection = Random.insideUnitCircle.normalized; // Random drift direction
@@ -46,6 +49,7 @@ public class Asteroid : MonoBehaviour
 
     public void DestroyAsteroid()
     {
+        collider.enabled = false;
         animator.SetBool("PlayAnimation", true);
         DropOre();
         Destroy(gameObject, animationDuration);

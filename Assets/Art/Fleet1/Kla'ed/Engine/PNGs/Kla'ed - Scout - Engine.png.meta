@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: fd2e5e7b7899f7f43a4131bf514417eb
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3685284039658677098
+    second: Kla'ed - Scout - Engine_0
+  - first:
+      213: 941319130742112051
+    second: Kla'ed - Scout - Engine_1
+  - first:
+      213: 7156414271985650500
+    second: Kla'ed - Scout - Engine_2
+  - first:
+      213: -9113297849329223650
+    second: Kla'ed - Scout - Engine_3
+  - first:
+      213: 6631569291776505311
+    second: Kla'ed - Scout - Engine_4
+  - first:
+      213: 2443485146505822060
+    second: Kla'ed - Scout - Engine_5
+  - first:
+      213: 2627508715146453070
+    second: Kla'ed - Scout - Engine_6
+  - first:
+      213: -8557795582673789172
+    second: Kla'ed - Scout - Engine_7
+  - first:
+      213: 711463816234343619
+    second: Kla'ed - Scout - Engine_8
+  - first:
+      213: -8703263871461791854
+    second: Kla'ed - Scout - Engine_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -77,7 +107,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 16
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c5abff0bd3bdcc0800000000000000
+      internalID: -3685284039658677098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 15
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fb92813cc301d00800000000000000
+      internalID: 941319130742112051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 14
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b8d333dd0b05360800000000000000
+      internalID: 7156414271985650500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 14
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18766ee3ef078180800000000000000
+      internalID: -9113297849329223650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_4
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 15
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd53ab3a221180c50800000000000000
+      internalID: 6631569291776505311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_5
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 16
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f3c6b6bc009e120800000000000000
+      internalID: 2443485146505822060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_6
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 15
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e402c8a5149c67420800000000000000
+      internalID: 2627508715146453070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_7
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 14
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f525a324a9c3980800000000000000
+      internalID: -8557795582673789172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 14
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc11354290afd900800000000000000
+      internalID: 711463816234343619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kla'ed - Scout - Engine_9
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 15
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297670bee9bc73780800000000000000
+      internalID: -8703263871461791854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

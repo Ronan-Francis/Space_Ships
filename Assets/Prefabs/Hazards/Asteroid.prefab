@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6113123958770306110}
   - component: {fileID: 6113123958770306109}
   - component: {fileID: 6113123958770306104}
-  - component: {fileID: 6113123958770306105}
   - component: {fileID: 6113123958770306106}
+  - component: {fileID: 1462211691232112732}
+  - component: {fileID: 3856205549708042445}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Enemy
@@ -102,7 +103,7 @@ MonoBehaviour:
   maxOffset: 0.5
   animationDuration: 1
   orePrefab: {fileID: 2385050066100706756, guid: f033fc57a29645f43a946de2a2dcfa56, type: 3}
-  oreDropCount: 3
+  oreDropCount: 2
 --- !u!95 &6113123958770306104
 Animator:
   serializedVersion: 3
@@ -122,22 +123,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &6113123958770306105
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113123958770306108}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.2
 --- !u!50 &6113123958770306106
 Rigidbody2D:
   serializedVersion: 4
@@ -159,3 +144,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1462211691232112732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6113123958770306108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0c1a6b11ff58754b8ef016c1df75233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeLoading: 2
+  textPrefab: {fileID: 1337486767267546897, guid: f084b29a7562589489ea35f42e7e7769, type: 3}
+--- !u!58 &3856205549708042445
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6113123958770306108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.18

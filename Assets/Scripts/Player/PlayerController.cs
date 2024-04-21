@@ -4,13 +4,14 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f; // Movement speed
     public GameObject[] weaponPrefabs; // Array to hold the weapon prefabs
-        public bool[] canSwitchTo; // Array indicating if the weapon can be switched to
+    public bool[] canSwitchTo; // Array indicating if the weapon can be switched to
     public int currentWeaponIndex = 0; // Index of the current weapon
     public Transform weaponsParent; // Parent transform to hold weapons as children
 
     private float minX, maxX, minY, maxY; // Screen bounds
     private GameObject currentWeaponInstance; // The instance of the current weapon attached to the player
     private Weapon currentWeaponScript; // Script reference to the current weapon
+    public MovementJoyStick movementJoystick; // Reference to the MovementJoystick script
 
     void Start()
     {
@@ -32,22 +33,33 @@ public class PlayerController : MonoBehaviour
         // Shooting - trigger or stop shooting based on input
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (currentWeaponScript != null)
-            {
-                currentWeaponScript.SetFiring(true);
-            }
+            StartShooting();
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            if (currentWeaponScript != null)
-            {
-                currentWeaponScript.SetFiring(false);
-            }
+            StopShooting();
         }
 
         // Cycling through weapons
         CycleWeapons();
     }
+
+    public void StartShooting()
+    {
+        if (currentWeaponScript != null)
+        {
+            currentWeaponScript.SetFiring(true);
+        }
+    }
+
+    public void StopShooting()
+    {
+        if (currentWeaponScript != null)
+        {
+            currentWeaponScript.SetFiring(false);
+        }
+    }
+
     void CalculateScreenBounds()
     {
         Vector2 screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
@@ -59,8 +71,8 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        float moveVertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        float moveHorizontal = (Input.GetAxis("Horizontal") + movementJoystick.joystickVec.x) * speed * Time.deltaTime;
+        float moveVertical = (Input.GetAxis("Vertical") + movementJoystick.joystickVec.y) * speed * Time.deltaTime;
         Vector3 newPosition = transform.position + new Vector3(moveHorizontal, moveVertical, 0);
         newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
         newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
@@ -79,7 +91,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void FindNextWeapon(int direction)
+    public void FindNextWeapon(int direction)
     {
         int originalIndex = currentWeaponIndex;
         bool found = false;

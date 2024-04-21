@@ -18,9 +18,7 @@ public class Bullet : MonoBehaviour
         if (transform.position.x > screenBounds.x || transform.position.x < -screenBounds.x ||
             transform.position.y > screenBounds.y || transform.position.y < -screenBounds.y)
         {
-            Destroy(gameObject); // Destroy the bullet
+            //Destroy(gameObject); // Destroy the bullet
         }
     }
-
-    
 }

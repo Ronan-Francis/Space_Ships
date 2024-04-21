@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4792619136511615024}
   - component: {fileID: 7157213274704284806}
   - component: {fileID: -1198481258380050912}
+  - component: {fileID: 3475396040998814269}
   m_Layer: 0
   m_Name: Ore
   m_TagString: Coin
@@ -123,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6c698ce87a0654990c8756f1c43848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staysWithinCameraBounds: 1
 --- !u!50 &-1198481258380050912
 Rigidbody2D:
   serializedVersion: 4
@@ -144,3 +146,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &3475396040998814269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2385050066100706756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8247499482d3b614e987bc236ce8ebf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.25
+  moveRight: 0

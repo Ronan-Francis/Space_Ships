@@ -41,7 +41,7 @@ public class Weapon : MonoBehaviour
             case WeaponType.Zapper:
                 ShootZapper();
                 break;
-            // Add cases for other weapon types as needed
+                // Add cases for other weapon types as needed
         }
     }
 
@@ -65,8 +65,10 @@ public class Weapon : MonoBehaviour
     private void ShootRockets()
     {
         // Instantiate rockets
-        Transform firepoint = transform.GetChild(0); // Assuming a single fire point
-        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        Transform firepoint1 = transform.GetChild(0);
+        Transform firepoint2 = transform.GetChild(1);
+        Instantiate(bulletPrefab, firepoint1.position, firepoint1.rotation);
+        Instantiate(bulletPrefab, firepoint2.position, firepoint2.rotation);
     }
 
     private void ShootZapper()
